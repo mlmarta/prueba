@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ejercicios</title>
+</head>
+<body>
+<h3>Ejercicio 1</h3>
+    <style>
+        img {width: 60px}
+    </style>
+<cabecera>
+    <span class="logo">🤖</span>
+    <span><p class="ta">RobotWeb</p></span>
+    <span class="logo2">🔎</span>
+</cabecera>
+    
+    <img src="1.webp">
+    <img src="2.webp">
+    <img src="3.webp">
+    <img src="4.webp">
+    <p class="to">Welcome to RobotWeb</p>
+
+ <h3>Ejercicio 2:</h3>
+    <style>
+    .ex2 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        background-color: lightskyblue;
+        place-items: center;
+    }
+    
+    .ex2 div {
+        background-color:lightyellow;
+    }
+    </style>
+    
+    <div class="ex2">
+        <div>Estoy siempre centrado</div>
+    </div>
+    
+<section>
+    <h3>Ejercicio 3:</h3>
+    <style>
+    .ex3 {
+        resize: both;
+        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: lightskyblue;
+        justify-content: center;
+    }
+    
+    .ex3 div{
+        flex: 0 1 150px;
+        margin: 5px;
+        background-color:lightyellow;
+    }
+    </style>
+    
+    <div class="ex3">
+        <div contenteditable="true">Crezco hacia abajo y tengo un ancho máximo de 150px <br> []</div>
+        <div contenteditable="true">Crezco hacia abajo y tengo un ancho máximo de 150px <br> []</div>
+        <div contenteditable="true">Crezco hacia abajo y tengo un ancho máximo de 150px <br> []</div>
+    </div>
+    
+<section>
+
+
+    <h3>Ejercicio 4:</h3>
+    
+    <style>
+    .ex4 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: minmax(150px, 25%) 1fr;
+        background-color: lightskyblue;
+    }
+    
+    .ex4-1{
+        background-color:lightyellow;
+    }
+    
+    .ex4-2 {
+        background-color: lightpink;
+    }
+    </style>
+    
+    <div class="ex4">
+        <div class="ex4-1" contenteditable="true">Tengo un ancho mínimo de 150px, y un máximo del 25% <br> []</div>
+        <div class="ex4-2" contenteditable="true">Ocupo el resto de espacio sobrante <br> []</div>
+    </div>
+
+<section>
+    <h3>Ejercicio 5:</h3>
+    
+    <style>
+    .ex5 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        background-color: lightskyblue;
+    }
+    
+    .ex5-1{
+        background-color:lightyellow;
+    }
+    .ex5-2 {
+        background-color: lightsalmon;
+    }
+    .ex5-3 {
+        background-color: lightpink;
+    }
+    </style>
+    
+    <div class="ex5">
+        <div class="ex5-1" contenteditable="true">Ocupo solo la altura que necesito <br> []</div>
+        <div class="ex5-2" contenteditable="true">Ocupo el resto de altura sobrante <br> []</div>
+        <div class="ex5-3" contenteditable="true">Ocupo solo la altura que necesito <br> []</div>
+    </div>
+<section>
+    <h3>Ejercicio 6:</h3>
+    
+    <style>
+    .ex6 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: auto 1fr auto;
+        background-color: lightskyblue;
+    }
+    
+    .ex6-1{
+        background-color:lightpink;
+        grid-column: 1 / 4;
+    }
+    .ex6-2 {
+        background-color: lightblue;
+    }
+    .ex6-3 {
+        background-color: lightsalmon;
+    }
+    .ex6-4 {
+        background-color: lightyellow;
+    }
+    .ex6-5 {
+        background-color: lightgreen;
+        grid-column: 1 / 4;
+    }
+    </style>
+    
+    <div class="ex6">
+        <div class="ex6-1" contenteditable="true">Ocupo solo la altura que necesito <br> []</div>
+        <div class="ex6-2" contenteditable="true">Ocupo el ancho que necesito, <br> y crezco de altura <br> []</div>
+        <div class="ex6-3" contenteditable="true">Ocupo el ancho restante, <br> y crezco de altura <br> []</div>
+        <div class="ex6-4" contenteditable="true">Ocupo el ancho que necesito, <br> y crezco de altura <br> []</div>
+        <div class="ex6-5" contenteditable="true">Ocupo solo la altura que necesito <br> []</div>
+    </div>
+
+<section>
+    <h3>Ejercicio 7:</h3>
+    <style>
+    
+        .ex7 {
+            resize: both;
+            overflow: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+        
+        .ex7-1{
+            background-color:lightpink;
+        }
+        .ex7-2 {
+            background-color: lightblue;
+        }
+        .ex7-3 {
+            background-color: lightsalmon;
+        }
+        .ex7-4 {
+            background-color: lightyellow;
+        }
+        </style>
+        
+        <div class="ex7">
+            <div class="ex7-1" contenteditable="true">Tenemos un ancho <b>mínimo</b> de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+            <div class="ex7-2" contenteditable="true">Tenemos un ancho <b>mínimo</b> de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+            <div class="ex7-3" contenteditable="true">Tenemos un ancho <b>mínimo</b> de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+            <div class="ex7-4" contenteditable="true">Tenemos un ancho <b>mínimo</b> de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+        </div>
+    
+    </section>
+
+    <section>
+        <h3>Ejercicio 8:</h3>
+        <style>
+    
+        .ex8 {
+            resize: both;
+            overflow: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            padding: 1em;
+            border: 1px solid blue;
+        }
+        
+        .ex8-1{
+            background-color:lightpink;
+        }
+        .ex8-2 {
+            background-color: lightblue;
+        }
+        .ex8-3 {
+            background-color: lightsalmon;
+        }
+        .ex8-4 {
+            background-color: lightyellow;
+        }
+        </style>
+        
+        <div class="ex8">
+            <div class="ex8-1" contenteditable="true">Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+            <div class="ex8-2" contenteditable="true">Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+            <div class="ex8-3" contenteditable="true">Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+            <div class="ex8-4" contenteditable="true">Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra <br> []</div>
+        </div>
+    
+        <div style="height: 500px;"></div>
+
+</body>
+</html>

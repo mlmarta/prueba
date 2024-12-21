@@ -1,0 +1,72 @@
+
+/*Ejercicio1*/
+img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.to {
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+    padding: 100px;
+    width: 70%;
+    margin: 50px auto;
+}
+.ta {
+    text-align: center;
+}
+.logo {
+    font-size: 40px;
+}
+.logo2 {
+    font-size: 40px;
+}
+cabecera { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Ejercicio2*/
+ <style>
+    .ex2 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        background-color:rgb(194, 231, 253);
+        place-items: center;
+    }
+    
+    .ex2 div {
+        background-color:lightyellow;
+    }
+</style>
+
+
+/*Ejercicio3*/
+  <style>
+        .ex3 {
+            resize: both;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            background-color:rgb(183, 219, 241);
+            justify-content: center;
+        }
+</style>
+/*Final*/
+<style>
+    body {
+        background-color: black; /* Fondo negro */
+        color: lightgray; /* Texto general en gris claro */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        color: white; /* Solo los títulos <h3> serán blancos */
+        text-align: left; /* Alinear a la izquierda */
+        margin-left: 20px; /* Margen desde el borde izquierdo */
+    }
+</style>
